@@ -136,8 +136,10 @@ class SpeakerDialog(QDialog):
         self.setWindowTitle(title)
         self.first = QSpinBox(self)
         self.first.setSingleStep(100)
+        self.first.setMaximum(20000)
         self.second = QDoubleSpinBox(self)
         self.second.setSingleStep(100)
+        self.second.setMaximum(100000)
         buttonBox = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel, self)
 
         layout = QFormLayout(self)

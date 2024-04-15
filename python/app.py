@@ -328,4 +328,5 @@ if __name__ == "__main__":
     sys.exit(app.exec_())
     """
     python -m PyQt5.uic.pyuic -x untitled.ui -o main.py
+    python -m PyInstaller --onefile --noconsole --icon=source/icon.ico --paths venv/Lib/site-packages app.py
     """
